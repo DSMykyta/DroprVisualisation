@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+
+
+<!-- ================== HEADER (mobile‑first) ================== -->
+<header>
+    <div class="container header-mobile" aria-label="Верхня панель">
+        <a class="logo" href="/" aria-label="На головну">
+            <img src="logo.svg" alt="Лого" height="24" />
+        </a>
+    </div>
+
+    <div class="container header-desktop">
+        <a class="logo" href="/">
+            <img src="logo.svg" height="28" />
+        </a>
+
+        <nav class="primary-nav">
+            <a class="gost_btn text-button" href="/catalog">Каталог</a>
+            <a class="gost_btn text-button" href="/terms">Умови</a>
+            <a class="gost_btn text-button" href="/contacts">Контакти</a>
+        </nav>
+
+        <div class="actions">
+            <button class="icon_btn_c" aria-label="Пошук">
+                <svg class="icon">
+                    <use href="icons.svg#search"></use>
+                </svg>
+            </button>
+            <a class="icon_btn_c" href="/account" aria-label="Кабінет">
+                <svg class="icon">
+                    <use href="icons.svg#account_circle"></use>
+                </svg>
+            </a>
+            <a class="icon_btn_c" href="/favorites" aria-label="Обране">
+                <svg class="icon">
+                    <use href="icons.svg#favorite_fill"></use>
+                </svg>
+            </a>
+            <a class="icon_btn_c" href="/cart" aria-label="Кошик">
+
+                <svg class="icon">
+                    <use href="icons.svg#shopping_cart"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</header>
+
+<nav class="bottom-nav" aria-label="Нижня навігація">
+    <a class="bn-item" href="/catalog" aria-label="Каталог">
+        <svg class="icon">
+            <use href="icons.svg#catalog"></use>
+        </svg><span>Каталог</span>
+    </a>
+    <button class="bn-item" href="/account" aria-label="Кабінет">
+        <svg class="icon">
+            <use href="icons.svg#account_circle"></use>
+        </svg><span class="text-caption">Кабінет</span>
+    </button>
+    <a class="bn-item" href="/cart" aria-label="Кошик">
+        <svg class="icon">
+            <use href="icons.svg#shopping_cart"></use>
+        </svg><span class="text-caption">Кошик</span>
+    </a>
+    <button class="bn-item" type="button" aria-label="Пошук">
+        <svg class="icon">
+            <use href="icons.svg#search"></use>
+        </svg><span class="text-caption">Пошук</span>
+    </button>
+    <button class="bn-item" type="button" aria-label="Меню">
+        <svg class="icon">
+            <use href="icons.svg#menu"></use>
+        </svg><span>Меню</span>
+    </button>
+</nav>
+
+
+<section class="announcement-bar" role="alert">
+    <div class="container">
+        <svg class="icon">
+            <use href="icons.svg#warning"></use>
+        </svg>
+        <p><a href="/login">Увійдіть</a> або <a href="/login">створіть обліковий запис</a>,
+            щоб бачити ціни та оформляти замовлення.</p>
+    </div>
+</section>
+
+
+
+
+
+
+<div class="sheet" aria-hidden="true">
+
+    <div class="sheet-panel" role="menu">
+
+        <div class="sheet-view" data-view="menu">
+
+            <a class="line_btn" href="/">Головна</a>
+            <a class="line_btn" href="/terms">Умови</a>
+            <a class="line_btn" href="/contacts">Контакти</a>
+
+        </div>
+
+        <div class="sheet-view" data-view="search">
+
+            <div class="lebel hide">
+                <span class="text-h2">Пошук</span>
+                <button class="gost_btn">
+                    <svg class="icon">
+                        <use href="icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="lebel">
+                <div class="input_box">
+                    <div class="input_container">
+                        <svg class="icon ">
+                            <use href="icons.svg#search"></use>
+                        </svg>
+
+                        <input class="text-body" placeholder="Пошук" type="text" />
+
+                        <svg id="close" class="icon">
+                            <use href="icons.svg#close"></use>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="liveSearchResult">
+                <div class="search-suggestions">
+
+                    <div id="categories">
+                        <div class="text-h4">Категорії</div>
+                        <div class="suggestions">
+                            <a href="/catalog/category2" class="suggestion-item">Протеїн</a>
+                        </div>
+                    </div>
+
+                    <div id="brands">
+                        <div class="text-h4">Бренди</div>
+                        <div class="suggestions">
+                            <a href="/brand/brand1" class="suggestion-item">Optimum Nutrition</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="search-results">
+                    <div class="item">
+                        <div class="imageWr">
+                            <a class="image" href="/product/1">
+                                <img src="prod1.jpg" alt="фото">
+                            </a>
+                        </div>
+                        <div class="line">
+                            <span class="name">Протеїн 100% Whey Gold</span>
+                            <span class="peice text-h4">1250 грн</span>
+                        </div>
+                        <button class="splash_btn">
+                            <svg class="icon">
+                                <use href="icons.svg#shopping_cart"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <button class="gost_btn">
+                <span>Всі результати</span>
+                <svg class="icon">
+                    <use href="icons.svg#arrow_forward"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="sheet-view" data-view="account">
+
+            <a class="line_btn" href="/account/change-password">Змінити пароль</a>
+            <a class="line_btn" href="/account/wishlist">Мій список бажань</a>
+            <a class="line_btn" href="/account/excel-builder">Exls конструктор</a>
+            <a class="line_btn" href="/account/locations">Місця доставок</a>
+            <a class="line_btn" href="/account/reconciliation">Розрахунки</a>
+            <a class="line_btn" href="/account/profile">Інформація про мене</a>
+
+            <div class="announcement-bar" role="alert">
+                <div class="container">
+                    <svg class="icon">
+                        <use href="icons.svg#warning"></use>
+                    </svg>
+                    <p><strong>Поповніть баланс для подальшої співпраці</strong></p>
+                </div>
+            </div>
+
+            <div class="lebel">
+                <span>Ваш баланс</span> <span style="color: var(--splash);">-15000<span> грн</span></span>
+            </div>
+
+            <div class="lebel">
+                <span>Ваша знижка </span><span style="color: var(--splash);">0.5%</span>
+            </div>
+
+            <div class="lebel">
+                <span class="text-h2">Капібара</span>
+                <button class="gost_btn">Вийти
+                    <svg class="icon">
+                        <use href="icons.svg#logout"></use>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    (() => {
+        // Ensure only one .sheet exists in the DOM
+        const allSheets = document.querySelectorAll('.sheet')
+        if (allSheets.length > 1) allSheets.forEach((el, i) => i > 0 && el.remove())
+
+        const sheet = document.querySelector('.sheet')
+        if (!sheet) return
+
+        const views = {
+            menu: document.querySelector('.sheet-view[data-view="menu"]'),
+            account: document.querySelector('.sheet-view[data-view="account"]'),
+            search: document.querySelector('.sheet-view[data-view^="search"]') // supports 'search' or 'search '
+        }
+
+        const btnMenu = document.querySelector('.bottom-nav .bn-item[aria-label="Меню"]')
+        const btnAccount = document.querySelector('.bottom-nav .bn-item[aria-label="Кабінет"]')
+        const btnSearchNav = document.querySelector('.bottom-nav .bn-item[aria-label="Пошук"]')
+        const btnSearchIcon = document.querySelector('.icon_btn_c[aria-label="Пошук"]')
+
+        // close buttons inside the search view
+        const btnSearchHeaderClose = document.querySelector('.sheet-view[data-view^="search"] .lebel .gost_btn')
+        const btnSearchInputClose = document.querySelector('.sheet-view[data-view^="search"] .input_container #close')
+
+        const defIcon = btn => {
+            const label = btn?.getAttribute('aria-label')
+            if (label === 'Меню') return 'menu'
+            if (label === 'Кабінет') return 'account_circle'
+            if (label === 'Пошук') return 'search'
+            return ''
+        }
+        const setIcon = (btn, id) => btn?.querySelector('use')?.setAttribute('href', `icons.svg#${id}`)
+
+        let opener = null
+        let current = null
+
+        const isOpen = () => sheet.classList.contains('is-open')
+
+        const setActive = view => {
+            Object.values(views).forEach(v => v && v.classList.remove('is-active'))
+            views[view]?.classList.add('is-active')
+            current = view
+
+            if (view === 'search') {
+                const focusable = views.search?.querySelector('[autofocus], input, textarea, [contenteditable]')
+                focusable?.focus?.({ preventScroll: true })
+            }
+        }
+
+        const open = (view, btn) => {
+            setActive(view)
+            sheet.classList.add('is-open')
+            sheet.setAttribute('aria-hidden', 'false')
+            if (opener && opener !== btn) setIcon(opener, defIcon(opener))
+            opener = btn
+            setIcon(opener, 'close')
+        }
+
+        const close = () => {
+            sheet.classList.remove('is-open')
+            sheet.setAttribute('aria-hidden', 'true')
+            if (opener) setIcon(opener, defIcon(opener))
+            opener = null
+            current = null
+        }
+
+        const toggleFor = (view, btn) => {
+            if (!isOpen()) return open(view, btn)
+            if (current === view) return close()
+            open(view, btn)
+        }
+
+        btnMenu?.addEventListener('click', () => toggleFor('menu', btnMenu))
+        btnAccount?.addEventListener('click', () => toggleFor('account', btnAccount))
+        btnSearchNav?.addEventListener('click', () => toggleFor('search', btnSearchNav))
+        btnSearchIcon?.addEventListener('click', () => toggleFor('search', btnSearchIcon))
+
+        // make both search close buttons close the sheet
+        btnSearchHeaderClose?.addEventListener('click', () => close())
+        btnSearchInputClose?.addEventListener('click', () => close())
+
+        // Close on click outside the panel
+        sheet.addEventListener('pointerdown', e => {
+            if (!e.target.closest('.sheet-panel')) close()
+        })
+
+        // Close on Escape key
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && isOpen()) close()
+        })
+
+        // Initial state
+        sheet.setAttribute('aria-hidden', 'true')
+        Object.values(views).forEach(v => v && v.classList.remove('is-active'))
+    })()
+
+
+</script>
+
+
+
+<main style="background-color: var(--back);">
+    <div style="display: flex; flex-direction: column;gap: 12px;">
+
+        <h3>BOTYONS</h3>
+        <div style="display: flex;  flex-wrap: wrap;  gap: 12px;">
+
+            <button class="primary">
+                <svg>
+                    <use href="icons.svg#menu"></use>
+                </svg>
+                primary
+                <svg>
+                    <use href="/icons.svg#menu"></use>
+                </svg>
+            </button>
+
+            <button class="splash_btn">
+                <svg>
+                    <use xlink:href="icons.svg#menu"></use>
+                </svg>
+                splash_btn
+                <svg>
+                    <use href="icons.svg#menu"></use>
+                </svg>
+            </button>
+
+            <button class="line_btn">
+                <svg>
+                    <use href="icons.svg#menu"></use>
+                </svg>
+                line_btn
+                <svg>
+                    <use href="icons.svg#menu"></use>
+                </svg>
+            </button>
+
+            <button class="gost_btn">
+                <svg>
+                    <use href="icons.svg#menu"></use>
+                </svg>
+                gost_btn
+                <svg>
+                    <use href="icons.svg#menu"></use>
+                </svg>
+            </button>
+
+            <button class="icon_btn_s">
+                <svg>
+                    <use href="icons.svg#menu"></use>
+                </svg>
+            </button>
+
+            <button class="icon_btn_s show">
+                <svg>
+                    <use href="icons.svg#menu"></use>
+                </svg>
+            </button>
+
+            <button class="icon_btn_c">
+                <svg>
+                    <use href="icons.svg#menu"></use>
+                </svg>
+            </button>
+
+            <button class="icon_btn_c show">
+                <svg>
+                    <use href="icons.svg#menu"></use>
+                </svg>
+            </button>
+
+            <button class="icon_btn_s">
+                <svg class="icon">
+                    <use href="icons.svg#shopping_cart"></use>
+                </svg>
+                <span class="badge">3</span>
+            </button>
+
+            <button class="icon_btn_c">
+                <svg class="icon">
+                    <use href="icons.svg#shopping_cart"></use>
+                </svg>
+                <span class="badge">333</span>
+            </button>
+
+        </div>
+
+        <h3>TABS</h3>
+        <div style="display: flex;  flex-wrap: wrap;  gap: 12px;">
+            <button class="tab_btn">
+                <svg>
+                    <use href="icons.svg#menu"></use>
+                </svg>
+                Tab_btn
+                <svg>
+                    <use href="/icons.svg#menu"></use>
+                </svg>
+            </button>
+
+            <button class="tab_btn show">
+                <svg>
+                    <use href="icons.svg#menu"></use>
+                </svg>
+                Tab_btn + Show
+                <svg>
+                    <use href="/icons.svg#menu"></use>
+                </svg>
+            </button>
+        </div>
+
+
+        <h3>INPUTS</h3>
+        <div style="display: flex; gap: 12px;">
+            <div class="input_box">
+                <div class="text-overline">Електронан пошта</div>
+
+                <div class="input_container">
+                    <svg class="icon">
+                        <use href="icons.svg#receipt_long"></use>
+                    </svg>
+
+                    <input class="text-body" placeholder="kapibarra@bara.com" type="text" />
+
+                    <svg class="icon">
+                        <use href="icons.svg#receipt_long"></use>
+                    </svg>
+                </div>
+
+                <div class="text-caption">Введіть електронну пошту</div>
+            </div>
+
+            <div class="input_box error">
+                <div class="text-overline">Телефон</div>
+
+                <div class="input_container">
+                    <svg class="icon">
+                        <use href="icons.svg#receipt_long"></use>
+                    </svg>
+
+                    <input class="text-body" placeholder="+380 000 00 00" type="text">
+
+                    <svg class="icon">
+                        <use href="icons.svg#receipt_long"></use>
+                    </svg>
+                </div>
+
+                <div class="text-caption">Введіть номнер телефону</div>
+                <div class="text-overline">Невірний номер</div>
+            </div>
+
+            <div class="input_box">
+                <div class="text-overline">Пароль</div>
+
+                <div class="input_container">
+                    <svg class="icon">
+                        <use href="icons.svg#receipt_long"></use>
+                    </svg>
+
+                    <input class="text-body" placeholder="Пароль" type="text" disabled>
+
+                    <svg class="icon">
+                        <use href="icons.svg#receipt_long"></use>
+                    </svg>
+                </div>
+
+                <div class="text-caption">Введіть пароль бовший за 200 символів</div>
+            </div>
+        </div>
+
+        <h3>CHEAKBOXS</h3>
+        <div style="display: flex; gap: 12px;">
+            <div class="ch">
+                <input type="checkbox" />
+                <span>
+                    <svg class="check-icon">
+                        <use href="icons.svg#cheak"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="ch">
+                <input type="checkbox" checked />
+                <span>
+                    <svg class="check-icon">
+                        <use href="icons.svg#cheak"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="ch">
+                <input type="checkbox" disabled />
+                <span>
+                    <svg class="check-icon">
+                        <use href="icons.svg#cheak"></use>
+                    </svg>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+    <h3>DROPDOWN</h3>
+    <div class="dropdown">
+        <button class="icon_btn_s dropdown-toggle">
+            <svg>
+                <use href="icons.svg#menu"></use>
+            </svg>
+        </button>
+
+        <div class="dropdown-menu shadow-m">
+            <div class="dropdown-item">
+
+                <svg>
+                    <use href="icons.svg#info"></use>
+                </svg>
+                <div class="ch">
+                    <input type="checkbox">
+                    <span>
+                        <svg class="check-icon">
+                            <use href="icons.svg#cheak"></use>
+                        </svg>
+                    </span>
+                </div>
+                <span>Пункт списку</span>
+                <div class="ch">
+                    <input type="checkbox">
+                    <span>
+                        <svg class="check-icon">
+                            <use href="icons.svg#cheak"></use>
+                        </svg>
+                    </span>
+                </div>
+                <svg>
+                    <use href="icons.svg#info"></use>
+                </svg>
+            </div>
+
+            <div class="dropdown-item">
+
+                <svg>
+                    <use href="icons.svg#info"></use>
+                </svg>
+                <div class="ch">
+                    <input type="checkbox" disabled>
+                    <span>
+                        <svg class="check-icon">
+                            <use href="icons.svg#cheak"></use>
+                        </svg>
+                    </span>
+                </div>
+                <span>Пункт списку</span>
+                <div class="ch">
+                    <input type="checkbox" disabled>
+                    <span>
+                        <svg class="check-icon">
+                            <use href="icons.svg#cheak"></use>
+                        </svg>
+                    </span>
+                </div>
+                <svg>
+                    <use href="icons.svg#info"></use>
+                </svg>
+            </div>
+            <hr>
+            <div class="dropdown-item">
+
+                <svg>
+                    <use href="icons.svg#info"></use>
+                </svg>
+                <div class="ch">
+                    <input type="checkbox">
+                    <span>
+                        <svg class="check-icon">
+                            <use href="icons.svg#cheak"></use>
+                        </svg>
+                    </span>
+                </div>
+                <span>Пункт списку</span>
+                <div class="ch">
+                    <input type="checkbox">
+                    <span>
+                        <svg class="check-icon">
+                            <use href="icons.svg#cheak"></use>
+                        </svg>
+                    </span>
+                </div>
+                <svg>
+                    <use href="icons.svg#info"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+
+    <h3>RADIO</h3>
+    <div style="display: flex; gap: 12px;">
+        <div class="radio">
+            <input type="radio" id="radio1" name="option" checked />
+            <span></span>
+        </div>
+
+        <div class="radio">
+            <input type="radio" id="radio2" name="option" />
+            <span></span>
+        </div>
+    </div>
+
+    <h3>SWITCH</h3>
+    <div class="switch">
+        <input type="checkbox" id="toggle1" />
+        <span></span>
+    </div>
+
+
+    <h3>SEARCH</h3>
+    <div style="display: flex; gap: 12px;">
+
+        <div class="input_box">
+            <div class="input_container">
+                <svg class="icon ">
+                    <use href="icons.svg#search"></use>
+                </svg>
+
+                <input class="text-body" placeholder="Пошук" type="text" />
+
+                <svg id="close" class="icon">
+                    <use href="icons.svg#close"></use>
+                </svg>
+            </div>
+        </div>
+
+</main>
+
+<script>
+
+    //Спадаючий список
+    document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', () => {
+            btn.parentElement.classList.toggle('open');
+        });
+    });
+
+    // Очистити пошук
+    const close = document.getElementById('close');
+    close.addEventListener('click', (e) => {
+        // інпут з того самого контейнера
+        const input = e.currentTarget.parentNode.querySelector('input');
+        if (!input) return;
+        input.value = '';
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+        input.focus();
+    });
+</script>
+
+
+<footer>
+    <div class="top">
+        <div class="container">
+            <div class="footer-content">
+                <div class="text-h4">Контакти</div>
+                <p>
+                    <strong><a href="tel:+380965197822" class="phone">+38 096 519-78-22</a></strong>
+                    <strong><a href="tel:+380734756707" class="phone">+38 073 475-67-07</a></strong>
+                    <strong><a href="tel:+380992379038" class="phone">+38 099 237-90-38</a></strong>
+
+                </p>
+
+                <div>
+                    <strong>
+                        <span>
+                            <a href="" title="Viber">Viber</a>
+                        </span>
+                        /
+                        <span>
+                            <a href="" title="Telegram">Telegram</a>
+                        </span>
+                    </strong>
+                </div>
+
+                <p>09:00 - 18:00 / пн - пт<br>10:00 - 16:00 / сб</p>
+            </div>
+
+            <div class="footer-content">
+                <div class="text-h4">Посилання</div>
+                <p>
+                    <a href="">Головна</a>
+                    <a href="">Каталог</a>
+                    <a href="">Умови</a>
+                    <a href="">Про нас</a>
+                </p>
+            </div>
+
+            <div class="footer-content">
+                <div class="text-h4">Кабінет</div>
+                <p>
+                    <a href="">Мій кабінет</a>
+                    <a href="">Інформація про мене</a>
+                    <a href="">Звірка</a>
+                    <a href="">Історія замовлень</a>
+                </p>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="container">
+
+            <div class="text-small">© 2025. Dropt. Спортивне харчування, суплименти і будь що що може знадобитися.</div>
+
+            <div>
+                <img src="mc_symbol.svg" alt="Mastercard" height="24">
+                <img src="visa_symbol.svg" alt="Visa" height="24">
+            </div>
+
+
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
