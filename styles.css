@@ -1250,13 +1250,23 @@ footer .bottom .container {
   display: none;
 }
 
-.sheet-view button .gost_btn {
+.sheet-view .line_btn {
   display: flex;
   align-items: center;
   width: 100%;
   flex: 0 0 auto;
   padding: 8px 12px;
   min-height: 0;
+}
+
+.sheet-view button a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.sheet-view button a:hover,
+.sheet-view button a:focus {
+  text-decoration: none;
 }
 
 
@@ -1411,3 +1421,4 @@ footer .bottom .container {
   color: var(--splash);
 
 }
+
